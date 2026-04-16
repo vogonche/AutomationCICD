@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="jovicakuresevic.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Submit order test(failed)" verbose="0">
-    <classes>
-      <class name="jovicakuresevic.tests.SubmitOrderTest">
-        <methods>
-          <include name="closeDriver"/>
-          <include name="OrderHistoryTest"/>
-          <include name="SubmitOrder" invocation-numbers="0 1"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- jovicakuresevic.tests.SubmitOrderTest -->
-    </classes>
-  </test> <!-- Submit order test(failed) -->
   <test thread-count="5" parallel="tests" name="Error Validations tests(failed)" verbose="0">
     <classes>
       <class name="jovicakuresevic.tests.ErrorValidations">
